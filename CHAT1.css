@@ -1,0 +1,269 @@
+/*Barra de navegacion */
+.navbar {
+
+    padding: 2rem;
+    background-color: #ce979f;
+
+}
+
+.navbar-collapse {
+    align-items:center;
+    justify-content:space-between;
+
+}
+/*Zona de Yolanda Varela*/
+.hero{
+    background-color:rgb(240, 223, 235);
+    min-height:450px;
+    text-align:center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+    .hero-imagen-perfil{
+        width:200px;
+        height:200px;
+        border-radius: 50%;
+        margin:20px;
+    }
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.sobre-mi {
+    height: 200px;
+    padding: 10px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+.experience-box {
+    background-color:#ce979f; /* Color blanco para el cajetín */
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc; /* Borde del cajetín */
+    border-radius: 5px; /* Bordes redondeados */
+    
+    /* Alineación y centrado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 200px; /* Altura mínima para mantener el centrado vertical */
+  }
+  
+
+
+
+.bg-pink {
+    background-color: #ce979f; /* Codigo de color para el fondo*/
+}
+
+
+/*proyectos recientes*/
+
+.proyectos-recientes {
+    padding: 40px;
+
+}
+
+.proyectos-recientes img { 
+     height: 100%;
+     width: 100%;
+     padding: 10px;
+     border-radius:10px;
+     display: block;
+     transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+    padding-top:60px;
+    margin-bottom: 40px;
+}
+/*Esta zona es la de las imagenes de los proyectos*/
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/*Aqui pones la opacidad cuando pulsas encima de la imagen*/
+.proyecto:hover img {
+    opacity: 0.2;
+}
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+.texto-negro{
+    color: black;
+}
+
+.seccion-descripcion{
+    font-size:1.2rem;
+    color: #584e4e;
+}
+
+/*Boton Info*/ 
+.btn-info{
+  font-size: 1.1rem;  
+  margin: 20px;
+  color: #ce979f;
+}
+
+/*Testiomonios*/
+.testimonios {
+    padding: 40px 40px 80px 40px;
+
+}
+
+/* Estilos personalizados para las imágenes en el carrusel */
+.carousel-item img {
+  max-width: 800px;
+    height: 500px; /* Altura automática para mantener la proporción de la imagen */
+    border-radius: 5px; 
+  }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #ce979f; /* Color del texto */
+    position: absolute; /* Posicionamiento absoluto para que se superponga a la imagen */
+    bottom: 0; /* Coloca el texto en la parte inferior */
+    left: 0; /* Alinea el texto a la izquierda */
+    width: 100%; /* Ancho del 100% para que se ajuste al contenedor del carrusel */
+    padding: 10px; /* Espaciado interior */
+  }
+
+
+  /* Contacto */
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+  }
+  
+  .contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+  }
+  
+  .contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover i {
+    color: black;
+  }
+
+
+  /* Pie de pagina (footer) */
+
+footer {
+    min-height: 500px;
+  }
+  
+  .footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+  }
+  
+  .footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+  }
+  
+  .iconos-redes-sociales a:hover i {
+    color: black;
+  }
+  
+  .derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+  }
+  
